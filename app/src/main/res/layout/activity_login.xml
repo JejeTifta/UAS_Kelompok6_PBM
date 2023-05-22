@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/ic_bacgrun"
+    tools:context=".view.login.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_laundry"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:text="      DJS' Laundry"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_circle_radius"
+        android:backgroundTint="@color/cream"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:padding="15dp"
+            android:textStyle="italic"
+            android:background="@drawable/bg_circle_radius"
+            android:backgroundTint="@color/cream"
+            android:hint="Username" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textStyle="italic"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:background="@drawable/bg_circle_radius"
+        android:backgroundTint="@color/cream"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/yellow"
+        android:background="@drawable/bg_circle_radius"
+        android:onClick="djs"
+        android:text="Login"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/yellow"
+        android:background="@drawable/bg_circle_radius"
+        android:onClick="djs"
+        android:text="Signup"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:text="                    MASUK    "
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+</LinearLayout>
